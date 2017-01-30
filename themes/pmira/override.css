@@ -1,0 +1,8 @@
+nav ul li.current_page_item a{ font-family: 'ProximaNova-Semibold'; font-weight:normal; color:#e07c19; border:2px solid #e07c19; }
+span.wpcf7-not-valid-tip{display: none;}
+div.wpcf7-response-output{margin: 0!important; padding: 0!important; border:none!important;}
+#wpcf7-f13-o1 div.wpcf7-response-output{color: #fff;}
+
+@media screen and (min-width: 1000px) {
+	#wpcf7-f13-o1 div.wpcf7-response-output{position: absolute; bottom: -20px;left: 0; color: #fff;}
+}

@@ -1,0 +1,835 @@
+/*
+Theme Name: PMIRAs
+Theme URI: http://underscores.me/
+Author: Cybernetikz
+Author URI: http://www.cybernetikz.com/
+Description: Precious Metal IRAs Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: pmira
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+PMIRAs is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+@charset "utf-8";
+
+
+*{ padding:0px; margin:0px; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: 'ProximaNova-Light';
+    src: url('./fonts/ProximaNova-Light/proximanova-light-webfont.eot');
+    src: url('./fonts/ProximaNova-Light/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/ProximaNova-Light/proximanova-light-webfont.woff') format('woff'),
+         url('./fonts/ProximaNova-Light/proximanova-light-webfont.ttf') format('truetype'),
+         url('./fonts/ProximaNova-Light/proximanova-light-webfont.svg#proximanova-light-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('./fonts/ProximaNova-Regular/proximanova-regular-webfont.eot');
+    src: url('./fonts/ProximaNova-Regular/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/ProximaNova-Regular/proximanova-regular-webfont.woff') format('woff'),
+         url('./fonts/ProximaNova-Regular/proximanova-regular-webfont.ttf') format('truetype'),
+         url('./fonts/ProximaNova-Regular/proximanova-regular-webfont.svg#proximanova-regular-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ProximaNova-Semibold';
+    src: url('./fonts/ProximaNova-Semibold/proximanova-semibold-webfont.eot');
+    src: url('./fonts/ProximaNova-Semibold/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/ProximaNova-Semibold/proximanova-semibold-webfont.woff') format('woff'),
+         url('./fonts/ProximaNova-Semibold/proximanova-semibold-webfont.ttf') format('truetype'),
+         url('./fonts/ProximaNova-Semibold/proximanova-semibold-webfont.svg#proximanova-semibold-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('./fonts/ProximaNova-Bold/proximanova-bold-webfont.eot');
+    src: url('./fonts/ProximaNova-Bold/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/ProximaNova-Bold/proximanova-bold-webfont.woff') format('woff'),
+         url('./fonts/ProximaNova-Bold/proximanova-bold-webfont.ttf') format('truetype'),
+         url('./fonts/ProximaNova-Bold/proximanova-bold-webfont.svg#proximanova-bold-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+	font-weight:normal;
+}
+body { 
+	background:#ffffff; 
+	font-family: 'ProximaNova-Light';
+	font-weight:normal; 
+}
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+/* remember to define focus styles! */
+:focus { outline: 0; }
+/* remember to highlight inserts somehow! */
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+* { padding:0px; margin:0px; }	
+header, footer, section, aside, nav, article {
+display: block;
+}
+img {
+	max-width:100%;
+	height:auto;
+}
+a { text-decoration:none; }
+a img { border:0px; }
+table, table th, table td, cellpadding, cellspacing, border {
+    border: medium none;
+    border-collapse: collapse;
+    padding: 0;
+}
+header, nav, footer {
+	margin:0px 0px;
+}
+.prepand1 { margin-top:10px;}
+.prepand2 { margin-top:15px;}
+.prepand3 { margin-top:20px;}
+.prepand4 { margin-top:25px;}
+.prepand5 { margin-top:30px;}
+.prepand6 { margin-top:45px;}
+
+.ptb { padding-top:40px; padding-bottom:40px; }
+.ptb2 { padding-top:80px; padding-bottom:80px; }
+
+/* =============== Start Text =============== */
+
+p { font-family: 'ProximaNova-Light'; font-size:20px; font-weight:normal; color:#252525; line-height:26px;  }
+
+/* =============== End Text =============== */
+.wrap {
+	  width:1200px;
+	  margin:auto;
+	  text-align:left;
+}
+
+#full-block {
+		width:100%;
+		float:left;
+		position:relative;
+}
+
+
+
+/*==============================
+	  header
+==============================*/
+ 
+/*=========== start top menu ==============*/
+#top-block {
+		width:100%;
+		float:left;
+		position:relative;
+		padding:20px 0;
+}
+.logo { float:left; position:relative; width:206px; }
+.top-contact { width:230px; float:right; position:relative;padding-top:20px; }
+.contact-text { font-size:18px; line-height:22px; color:#21386c;  }
+.contact-num { font-family: 'ProximaNova-Semibold'; font-size:22px; line-height:26px; color:#21386c; }
+#navigation {
+		width:auto;
+		float:right;
+		position:relative;
+		padding-top:5px;
+		margin-right:5%;
+}
+.btn{
+	display:none;
+}
+nav {
+	float:right;
+	position:relative;
+}
+
+nav ul li { font-family: 'ProximaNova-Regular'; font-weight:normal; float:left; color:#21386c; font-size:18px; line-height:24px; list-style:none; position:relative; text-transform:uppercase;padding-left:10px; padding-right:10px;  }
+nav ul li a { float:left; color:#21386c; border:2px solid #FFF; padding:14px 15px; }
+nav ul li a:hover { color:#e07c19; border:2px solid #e07c19;  }	
+nav ul li.fixed a { font-family: 'ProximaNova-Semibold'; font-weight:normal; color:#e07c19; border:2px solid #e07c19; }
+
+/*nav ul li:first-child { padding-left:0;}
+nav ul li:last-child { padding-right:0;}*/
+
+.lihoverclass {
+display: block;
+float:left; color:#e07c19; border:2px solid #e07c19 !important; padding:14px 15px;
+}
+
+nav ul li ul {
+position:absolute;
+visibility: hidden;
+z-index:9;
+float:left;
+background:#e07c19;
+width:300px;
+margin-left:10px;
+padding-top:10px;
+padding-bottom:10px;
+}
+
+nav ul li ul li {
+width:270px;
+padding:0 15px;  
+float:left; 
+color:#21386c; 
+position:relative;
+}
+/*nav ul li ul li:first-child { padding:0 15px; }*/
+	 
+/* Sub level menu links style */
+nav ul li ul li a, nav ul li.fixed ul li a {
+display:block;
+width:260px;
+padding:5px;
+float:left;
+/*height:15px;*/
+position:relative;
+text-align:left;
+font-size:16px; 
+font-weight:normal; 
+color:#21386c; 
+cursor:pointer; 
+line-height:18px;
+height:auto;
+margin:0px;
+border:none;
+}
+
+nav ul li ul li a:hover { color:#231815; background:#FFF; }
+
+/*===========  end top menu ==============*/
+
+
+/*==============================
+	  end header
+==============================*/
+
+
+
+
+/*==============================
+	  top contact
+==============================*/
+.wrap-contact { width:100%; float:left; position:relative; }
+.blue-bg{ background:#152342 url(./images/pmris-blue-bg.jpg) top center no-repeat; background-size:cover; }
+.blue-bg2{ background:#152342 url(./images/pmris-blue-bg2.jpg) top center no-repeat; background-size:cover; }
+
+.contact-title-block { width:100%; float:left; position:relative; margin-bottom:102px; }
+.contact-title-block h2 { font-family: 'ProximaNova-Semibold'; font-size:45px; line-height:50px; color:#FFFFFF; text-transform:uppercase; text-align:center; }
+.contact-title-block p { font-family: 'ProximaNova-Regular'; font-size:22px; line-height:25px; color:#FFFFFF; text-align:center; margin-top:20px; }
+
+				
+.top-contact-form{
+				width:100%;
+				float:left;
+				position:absolute;
+				bottom:0px;
+				left:0;
+				}
+
+.top-contact-form input {	
+box-sizing: border-box;
+width:25%;
+padding:0 20px;
+height:60px;
+display:inline-block;
+background:#283553;
+border:1px solid #5b6c95;
+font-family: 'ProximaNova-Light';
+ font-size:20px; font-weight:normal; color:#ffffff; line-height:60px; 
+ margin-right:0.51%;
+ vertical-align:middle;
+}
+
+.top-contact-form input[type=submit] {	
+border:0px; background:#cc940f; font-family: 'ProximaNova-Semibold'; font-size:20px; color:#FFFFFF; line-height:62px; padding:0 20px; width:21%; height:62px; display:inline-block; vertical-align:top; cursor:pointer; text-transform:uppercase; border-radius:5px;  -webkit-border-radius:5px;  -moz-border-radius:5px; behavior: url('PIE.htc'); margin-right:0; }
+
+
+
+/*==============================
+	  end top contact
+==============================*/
+
+
+/*==============================
+	  start Block Body
+==============================*/
+
+#body-full{
+			width:100%;
+			background:#FFF;
+			float:left;
+			position:relative;
+			}
+			
+#body-full2{
+			width:100%;
+			background:#f7f7f7;
+			float:left;
+			position:relative;
+			}
+
+.main-body{
+			width:100%;
+			float:left;
+			position:relative;
+			}
+
+/*==============================
+	  end Block Body
+==============================*/
+
+
+
+
+/*==============================
+	  Education
+==============================*/
+			
+.education-body{
+				width:100%;
+				float:left;
+				position:relative;
+				}
+
+	.education-body h1{ font-family: 'ProximaNova-Bold'; font-size:35px; line-height:40px; color:#21386c; text-transform:uppercase; margin-bottom:30px; text-align:center;}
+	.education-body p{ font-family: 'ProximaNova-Light'; font-size:22px; line-height:28px; color:#3a3a3a; margin-bottom:20px; }
+	.education-body img{ float:right; margin-left:40px; margin-bottom:20px; }
+
+/*==============================
+	 end Education
+==============================*/
+
+
+/*==============================
+	  Invest Precious
+==============================*/
+			
+.invest-precious-body{
+					width:100%;
+					padding:40px 0px 20px 0px;
+					float:left;
+					position:relative;
+					text-align:center;
+					}
+
+	.invest-precious-body h2{ font-family: 'ProximaNova-Bold'; font-size:35px; line-height:40px; color:#cc940f; text-transform:uppercase; margin-bottom:5px; }
+	.invest-precious-body p{ font-family: 'ProximaNova-Regular'; font-size:22px; line-height:28px; color:#21386c; margin-bottom:20px; }
+		.invest-precious-body p a{ color:#21386c; }
+		
+.invest-precious-left{
+					  width:48%;
+					  float:left;
+					  position:relative;
+					}
+					
+.invest-precious-right{
+					  width:48%;
+					  float:right;
+					  position:relative;
+					}
+					
+.invest-precious-box{
+					  width:100%;
+					  padding:30px 25px 10px 25px;
+					  border:1px solid #e6e6e6;
+					  border-radius:10px;
+					  float:left;
+					  position:relative;
+					  margin-bottom:20px;
+					}
+					
+	.invest-precious-box h3{ font-family: 'ProximaNova-Semibold'; font-size:25px; line-height:30px; color:#21386c; margin-bottom:15px; }
+	.invest-precious-box p{ font-family: 'ProximaNova-Light'; font-size:20px; line-height:28px; color:#252525; margin-bottom:15px; }
+		.invest-precious-box p a{ color:#252525; }
+		
+		
+.precious-metal-body{
+					width:100%;
+					float:left;
+					position:relative;
+					text-align:center;
+					}
+
+	.precious-metal-body h2{ font-family: 'ProximaNova-Bold'; font-size:35px; line-height:40px; color:#21386c; text-transform:uppercase; margin-bottom:20px; }
+	.precious-metal-body p{ font-family: 'ProximaNova-Light'; font-size:22px; line-height:28px; color:#252525; margin-bottom:20px; }
+		.precious-metal-body p a{ color:#252525; }
+	.precious-metal-body p strong{ font-family: 'ProximaNova-Semibold'; font-weight:normal; color:#21386c; }	
+		
+		
+.precious-metal-content{
+						width:100%;
+						float:left;
+						position:relative;
+						margin-top:25px;
+						}
+
+	.precious-metal-content h3{ font-family: 'ProximaNova-Bold'; font-size:30px; line-height:35px; color:#21386c; text-transform:uppercase; margin-bottom:15px; }
+	.precious-metal-content h3 span{ background:#f7f7f7; padding-right:15px; }
+	
+	.gold-line{ background:url(./images/pmris-gold-line.gif) left center repeat-x; }
+	.silver-line{ background:url(./images/pmris-silver-line.gif) left center repeat-x; }
+	.platinum-line{ background:url(./images/pmris-platinum-line.gif) left center repeat-x; }
+	
+	.precious-metal-content p{ font-family: 'ProximaNova-Light'; font-size:22px; line-height:25px; color:#252525; margin-bottom:20px; }
+		.precious-metal-content p a{ color:#252525; }
+		
+
+/*==============================
+	 end Education
+==============================*/
+
+
+
+/*==============================
+	  bottom
+==============================*/
+
+.bottom-body{
+			width:100%;
+			float:left;
+			position:relative;
+			text-align:center;
+			}
+
+	.bottom-body h2{ font-family: 'ProximaNova-Semibold'; font-size:35px; line-height:40px; color:#21386c; text-transform:uppercase; margin-bottom:20px; }
+	.bottom-body p{ font-family: 'ProximaNova-Light'; font-size:22px; line-height:28px; color:#3a3a3a; margin-bottom:20px; }
+		.bottom-body p a{ color:#3a3a3a; }
+	.bottom-body p strong{ font-family: 'ProximaNova-Semibold'; font-weight:normal; color:#21386c; }
+
+
+.bottom-form{
+			width:100%;
+			float:left;
+			position:relative;
+			margin-top:20px;
+			}
+
+.bottom-form input {	
+box-sizing: border-box;
+width:25%;
+padding:0 20px;
+height:60px;
+display:inline-block;
+background:#FFF;
+border:1px solid #c6c6c6;
+font-family: 'ProximaNova-Light';
+ font-size:20px; font-weight:normal; color:#3a3a3a; line-height:60px; 
+ margin-right:0.51%;
+ vertical-align:middle;
+}
+
+.bottom-form input[type=submit] {	
+border:0px; background:#cc940f; font-family: 'ProximaNova-Semibold'; font-size:20px; color:#FFFFFF; line-height:62px; padding:0 20px; width:21%; height:62px; display:inline-block; vertical-align:top; cursor:pointer; text-transform:uppercase; border-radius:5px;  -webkit-border-radius:5px;  -moz-border-radius:5px; behavior: url('PIE.htc'); margin-right:0;  }
+
+
+/*==============================
+	 end  bottom
+==============================*/
+
+
+
+
+
+/*==============================
+	  footer
+==============================*/
+
+.footer-full{ width:100%; float:left; position:relative; background:#21386c; }
+
+footer{
+	  width:100%;
+	  padding:30px 0px 25px 0px;
+	  float:left;
+	  position:relative;
+	  text-align:center;
+	}
+	
+	footer p{ font-family: 'ProximaNova-Light'; font-size:18px; line-height:25px; color:#FFF; }
+		footer p a{ color:#FFF; }
+			footer p a:hover{ color:#FFF; border-bottom:1px solid #FFF; }
+
+/*==============================
+	  end bottom
+==============================*/
+
+
+
+/*==============================
+	 start precious metal
+==============================*/
+
+#precious-full{ width:100%; float:left; position:relative; background:#21386c; }
+
+.precious-metal-list{
+				  width:80%;
+				  padding:25px 30px;
+				  background:#fbfbfb;
+				  border:1px solid #eeeeee;
+				  border-radius:10px;
+				  float:left;
+				  position:relative;
+				  margin-left:10%;
+				}
+				
+	.precious-metal-list h3{ font-family: 'ProximaNova-Semibold'; font-size:25px; line-height:30px; color:#21386c; margin-bottom:10px; }
+			
+	.precious-metal-list p{ font-family: 'ProximaNova-Light'; font-size:20px; line-height:28px; color:#252525; margin-bottom:30px; }
+		.precious-metal-list p a{ color:#252525; }
+		
+.precious-account{
+				width:100%;
+				float:left;
+				position:relative;
+				text-align:center;
+				}
+
+	.precious-account h2{ font-family: 'ProximaNova-Bold'; font-size:35px; line-height:40px; color:#FFF; text-transform:uppercase; margin-bottom:20px; }
+	.precious-account p{ font-family: 'ProximaNova-Regular';font-size:22px; line-height:28px; color:#FFF; margin-bottom:20px; }
+		.precious-account p a{ color:#FFF; }
+	.precious-account p span{ font-family: 'ProximaNova-Light'; }
+	
+	.precious-account ul{ width:605px; margin:auto; text-align:left; }
+	.precious-account li{ font-family: 'ProximaNova-Regular';font-size:22px; line-height:28px; color:#FFF; list-style:none; margin-top:8px; background:url(./images/pmris-tick.png) left no-repeat; padding-left:35px; background-position:0 .4em; }
+		.precious-account li a{ color:#FFF;  }
+
+
+/*==============================
+	  end precious metal
+==============================*/
+
+
+
+/*==============================
+	  start precious metal IRAS
+==============================*/
+
+#gold-full{ width:100%; float:left; position:relative; background:#f8c85f; }
+
+.gold-body{
+			width:100%;
+			float:left;
+			position:relative;
+			}
+
+	.gold-body h1{ font-family: 'ProximaNova-Bold'; font-size:35px; line-height:40px; color:#FFF; text-transform:uppercase; margin-bottom:30px; text-align:center;}
+	.gold-body p{ font-family: 'ProximaNova-Light'; font-size:22px; line-height:25px; color:#3a3a3a; margin-bottom:20px; }
+	.gold-body img{ float:right; margin-left:40px; margin-bottom:20px; border:5px solid #FFF; }
+
+/*==============================
+	  end precious metal IRAS
+==============================*/
+
+
+
+/************************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+media queries
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+*************************************************************************************/
+
+
+/************************************************************************************
+smaller than 1200
+*************************************************************************************/
+@media screen and (max-width: 1200px) {
+
+.wrap{
+	  width:98%;
+	}
+
+
+
+}
+
+/************************************************************************************
+smaller than 1024
+*************************************************************************************/
+@media screen and (max-width: 1024px) {
+/*=========== start top menu ==============*/
+#navigation {
+		margin-right:2%;
+}
+
+nav ul li { color:#21386c; font-size:16px; line-height:24px; padding-left:10px; padding-right:10px;  }
+nav ul li a { color:#21386c; padding:14px 10px; }
+/*=========== end top menu ==============*/
+
+}
+
+/************************************************************************************
+smaller than 960px
+*************************************************************************************/
+@media screen and (max-width: 960px) {
+	
+.ptb, .ptb2 { padding-top:30px; padding-bottom:30px; }
+
+/*===============================  = start top menu ==============================  */	
+#navigation {
+		width:100%;
+		margin-right:0;
+}
+nav.menushow{display:block;}
+nav {
+	width:100%;
+	float:right;
+	position:relative;
+}
+.btn{
+	  height:50px;
+	  padding-top:5px;
+	  display:block;		  
+	  color: #fff;
+	  -webkit-border-radius:5px; 
+	   -moz-border-radius:5px; 
+	   border-radius:5px; 
+	   behavior: url('PIE.htc');
+	  cursor:pointer;	
+	  text-align:center;
+	  width:100%;
+	  background:#e07c19;  
+}	
+nav{ display:none; }
+nav ul li { width:100%; color:#fff; padding:0;  font-family: 'ProximaNova-Bold'; }
+nav ul li a { width:100%; background:#e07c19; color:#fff; padding:5px 2%; border:none; -webkit-border-radius:5px;  -moz-border-radius:5px;  border-radius:5px;  behavior: url('PIE.htc'); margin-top:3px; }
+nav ul li a:hover { color:#fff; background:#e07c19; border:none; }
+nav ul li.fixed a { color:#21386c; border: none; }
+
+.lihoverclass { display: block; background:#e07c19; color:#fff; }
+
+/*1st sub level menu*/
+nav ul li ul {
+width:100% !important;
+position:relative !important;
+margin-top:0px !important;
+top:-2px !important;
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+margin-left:0;
+}
+
+nav ul li ul li { width:94% !important; padding:0 3%; float:left; color:#FFFFFF;  position:relative; border-radius:0px; }
+
+	 
+/* Sub level menu links style */
+nav ul li ul li a, nav ul li.fixed ul li a{
+width:98% !important;
+padding:5px 1% !important;
+margin:0;
+position:relative; 
+}
+
+nav ul li ul li a:hover { color:#231815; background-color:#FFF; border-radius:0px; border: none; }
+
+/*==============================  = end top menu ==============================  */
+/*==============================
+	  top contact
+==============================*/
+.contact-title-block { margin-top:20px; margin-bottom:0; }
+.contact-title-block h2 { font-size:30px; line-height:36px ;}
+.top-contact-form{
+				width:100%;
+				float:left;
+				position:relative;
+				bottom:0px;
+				left:0;
+				}
+
+.top-contact-form input {	
+box-sizing: border-box;
+width:100%;
+padding:0 10px;
+height:40px;
+ font-size:18px;
+ line-height:40px; 
+ margin-top:10px;
+}
+
+.top-contact-form input[type=submit] {	
+font-size:18px; color:#FFFFFF; line-height:42px; width:100%; height:42px; }
+
+
+/*==============================
+	  end top contact
+==============================*/
+
+/*============================== Education ==============================*/
+
+.education-body{ text-align:center; }
+
+.education-body img{ float:none; margin-left:0px; margin-bottom:20px; display:inline-block; }
+
+.invest-precious-left{
+					  width:100%;
+					}
+					
+.invest-precious-right{
+					  width:100%;
+					}
+					
+.precious-metal-content{
+						text-align:center;
+						}
+
+	.precious-metal-content h3 span{ background:#f7f7f7; padding:2px 15px; }
+	
+
+/*============================== end Education ==============================*/
+
+
+
+/*==============================
+	  start precious metal
+==============================*/
+
+#precious-full{ width:100%; float:left; position:relative; background:#21386c; }
+
+.precious-metal-list{
+				  width:90%;
+				  margin-left:5%;
+				}
+				
+/*==============================
+	  end precious metal
+==============================*/
+
+
+
+/*==============================
+	  start precious metal IRAS
+==============================*/
+
+.gold-body{
+			text-align:center;
+			}
+
+.gold-body img{ float:none; margin-left:0px; margin-bottom:20px; display:inline-block; }
+
+/*==============================
+	  end precious metal IRAS
+==============================*/
+
+
+}
+
+/************************************************************************************
+smaller than 768
+*************************************************************************************/
+@media screen and (max-width: 768px) {
+
+/*==============================
+	 start bottom
+==============================*/
+
+.bottom-form input {	
+box-sizing: border-box;
+width:100%;
+padding:0 10px;
+height:40px;
+font-size:18px;
+line-height:40px; 
+margin-top:10px;
+}
+
+.bottom-form input[type=submit] {	
+font-size:18px; color:#FFFFFF; line-height:42px; width:100%; height:42px; }
+
+/*==============================
+	 end bottom
+==============================*/
+
+
+}
+
+
+
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
+@media screen and (max-width: 650px) {
+
+.precious-account ul{ width:100%; }
+
+}
+
+
+	
+
+/************************************************************************************
+smaller than 480
+*************************************************************************************/
+@media screen and (max-width: 480px) {	
+
+
+.logo { float:left; position:relative; width:100%; text-align:center; }
+.top-contact { width:100%; text-align:center; float:right; position:relative;padding-top:10px;padding-bottom:10px; }
+
+}
+
+
+/************************************************************************************
+smaller than 320
+*************************************************************************************/
+@media screen and (max-width: 340px) {
+
+
+
+
+
+
+
+}
